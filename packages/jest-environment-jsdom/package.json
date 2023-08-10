@@ -21,7 +21,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/bufbuild/connect-es-utils.git",
+    "url": "https://github.com/bufbuild/jest-environment-jsdom.git",
     "directory": "packages/jest-environment-jsdom"
   },
   "sideEffects": false,
