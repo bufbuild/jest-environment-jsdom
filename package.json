@@ -5,12 +5,13 @@
     "./packages/jest-environment-jsdom-example"
   ],
   "scripts": {
-    "all": "turbo run build test format generate lint",
+    "all": "turbo run build test format generate lint license-header",
     "build": "turbo run build",
     "test": "turbo run test",
     "lint": "turbo run lint",
     "format": "turbo run format",
-    "generate": "turbo run generate"
+    "generate": "turbo run generate",
+    "license-header": "turbo run license-header"
   },
   "type": "module",
   "engineStrict": true,
