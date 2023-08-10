@@ -5,7 +5,7 @@ with support for the [Encoding API](https://developer.mozilla.org/en-US/docs/Web
 
 ## Packages
 
-- [@bufbuild/jest-environment-jsdom](https://www.npmjs.com/package/@bufbuild/jest-environment-jsdom):
+- [@bufbuild/jest-environment-jsdom](https://www.npmjs.com/package/@bufbuild/jest-environment-jsdom)
 
 ## Legal
 
