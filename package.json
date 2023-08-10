@@ -1,0 +1,42 @@
+{
+  "private": true,
+  "workspaces": [
+    "./packages/jest-environment-jsdom",
+    "./packages/jest-environment-jsdom-example"
+  ],
+  "scripts": {
+    "all": "turbo run build test format generate lint",
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "format": "turbo run format",
+    "generate": "turbo run generate"
+  },
+  "type": "module",
+  "engineStrict": true,
+  "engines": {
+    "node": ">=16",
+    "npm": ">=8"
+  },
+  "licenseHeader": {
+    "licenseType": "apache",
+    "yearRange": "2021-2023",
+    "copyrightHolder": "Buf Technologies, Inc."
+  },
+  "devDependencies": {
+    "@bufbuild/license-header": "^0.0.1",
+    "@typescript-eslint/eslint-plugin": "^6.2.1",
+    "@typescript-eslint/parser": "^6.2.1",
+    "eslint": "^8.46.0",
+    "eslint-import-resolver-typescript": "^3.5.5",
+    "eslint-plugin-import": "^2.28.0",
+    "eslint-plugin-node": "^11.1.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "@types/jasmine": "^4.3.5",
+    "jasmine": "^5.1.0",
+    "turbo": "^1.10.12"
+  }
+}
