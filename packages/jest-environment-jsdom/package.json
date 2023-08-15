@@ -1,6 +1,6 @@
 {
   "name": "@bufbuild/jest-environment-jsdom",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "Apache-2.0",
   "description": "A modern jsdom test environment for Jest",
   "type": "module",
