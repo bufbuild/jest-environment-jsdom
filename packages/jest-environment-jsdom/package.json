@@ -32,7 +32,7 @@
     "build:esm+types": "tsc --project tsconfig.json --module ES2015 --verbatimModuleSyntax --outDir ./dist/esm --declaration --declarationDir ./dist/types && echo >./dist/esm/package.json '{\"type\":\"module\", \"sideEffects\":false}'",
     "format": "prettier --write --ignore-unknown '.' '!dist'",
     "lint": "eslint --max-warnings 0 .",
-    "license-header": "license-header --ignore 'dist/**'"
+    "license-header": "license-header"
   },
   "peerDependencies": {
     "jest-environment-jsdom": "^29.5.0"
