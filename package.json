@@ -25,7 +25,7 @@
     "copyrightHolder": "Buf Technologies, Inc."
   },
   "devDependencies": {
-    "@bufbuild/license-header": "^0.0.1",
+    "@bufbuild/license-header": "^0.0.3",
     "@typescript-eslint/eslint-plugin": "^6.5.0",
     "@typescript-eslint/parser": "^6.2.1",
     "eslint": "^8.48.0",
