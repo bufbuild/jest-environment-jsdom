@@ -3,7 +3,7 @@
 jest-environment-jsdom
 ===========
 
-[![License](https://img.shields.io/github/license/bufbuild/jest-environment-jsdom?color=blue)](./LICENSE) [![Build](https://github.com/bufbuild/jest-environment-jsdom/actions/workflows/ci.yaml/badge.svg?branch=main)](https://github.com/bufbuild/jest-environment-jsdom/actions/workflows/ci.yaml) [![NPM Version](https://img.shields.io/npm/v/@bufbuild/jest-environment-jsdom/latest/latest?color=green&label=%40bufbuild%2Fjest-environment-jsdom)](https://www.npmjs.com/package/@bufbuild/jest-environment-jsdom)
+[![License](https://img.shields.io/github/license/bufbuild/jest-environment-jsdom?color=blue)](./LICENSE) [![Build](https://github.com/bufbuild/jest-environment-jsdom/actions/workflows/ci.yaml/badge.svg?branch=main)](https://github.com/bufbuild/jest-environment-jsdom/actions/workflows/ci.yaml) [![NPM Version](https://img.shields.io/npm/v/@bufbuild/jest-environment-jsdom/latest?color=green&label=%40bufbuild%2Fjest-environment-jsdom)](https://www.npmjs.com/package/@bufbuild/jest-environment-jsdom)
 
 An extension of [jest-environment-jsdom](https://www.npmjs.com/package/jest-environment-jsdom)
 with support for the [Encoding API](https://developer.mozilla.org/en-US/docs/Web/API/Encoding_API).
