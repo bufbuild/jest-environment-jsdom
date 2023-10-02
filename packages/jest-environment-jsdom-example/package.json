@@ -12,7 +12,7 @@
   "devDependencies": {
     "@jest/globals": "^29.7.0",
     "@bufbuild/jest-environment-jsdom": "0.1.1",
-    "jest-environment-jsdom": "^29.6.4",
+    "jest-environment-jsdom": "^29.7.0",
     "ts-jest": "^29.1.1"
   }
 }
