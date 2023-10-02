@@ -15,7 +15,7 @@
 import { TextDecoder, TextEncoder } from "util";
 import JsdomEnvironment from "jest-environment-jsdom";
 
-module.exports = class JsdomModernEnvironment extends JsdomEnvironment {
+export default class JsdomModernEnvironment extends JsdomEnvironment {
   override async setup() {
     await super.setup();
 
@@ -36,4 +36,4 @@ module.exports = class JsdomModernEnvironment extends JsdomEnvironment {
     this.global.Uint8Array = Uint8Array;
     this.global.ArrayBuffer = ArrayBuffer;
   }
-};
+}

@@ -3,7 +3,6 @@
   "version": "0.1.1",
   "license": "Apache-2.0",
   "description": "A modern jsdom test environment for Jest",
-  "type": "module",
   "main": "./dist/cjs/index.js",
   "exports": "./dist/cjs/index.js",
   "files": [
@@ -14,7 +13,6 @@
     "url": "https://github.com/bufbuild/jest-environment-jsdom.git",
     "directory": "packages/jest-environment-jsdom"
   },
-  "sideEffects": false,
   "scripts": {
     "clean": "rm -rf ./dist/*",
     "build": "npm run build:cjs",
