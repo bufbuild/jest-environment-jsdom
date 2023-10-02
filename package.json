@@ -8,7 +8,7 @@
     "all": "turbo run build test format generate lint attw license-header",
     "build": "turbo run build",
     "test": "turbo run test",
-    "lint": "turbo run lint attw",
+    "lint": "turbo run lint",
     "attw": "turbo run attw",
     "format": "turbo run format",
     "generate": "turbo run generate",
