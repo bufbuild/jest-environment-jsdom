@@ -5,17 +5,7 @@
   "description": "A modern jsdom test environment for Jest",
   "type": "module",
   "main": "./dist/cjs/index.js",
-  "types": "./dist/types/index.d.ts",
-  "exports": {
-    "import": {
-      "types": "./dist/types/index.d.ts",
-      "default": "./dist/esm/index.js"
-    },
-    "require": {
-      "types": "./dist/types/index.d.ts",
-      "default": "./dist/cjs/index.js"
-    }
-  },
+  "exports": "./dist/cjs/index.js",
   "files": [
     "dist/**"
   ],
@@ -26,15 +16,19 @@
   },
   "sideEffects": false,
   "scripts": {
-    "clean": "rm -rf ./dist/cjs/* ./dist/esm/* ./dist/types/*",
-    "build": "npm run build:cjs && npm run build:esm+types",
-    "build:cjs": "tsc --project tsconfig.json --module commonjs --outDir ./dist/cjs && echo >./dist/cjs/package.json '{\"type\":\"commonjs\"}'",
-    "build:esm+types": "tsc --project tsconfig.json --module ES2015 --verbatimModuleSyntax --outDir ./dist/esm --declaration --declarationDir ./dist/types && echo >./dist/esm/package.json '{\"type\":\"module\", \"sideEffects\":false}'",
+    "clean": "rm -rf ./dist/*",
+    "build": "npm run build:cjs",
+    "build:cjs": "tsc --project tsconfig.json --module commonjs --outDir ./dist/cjs --declaration --declarationDir ./dist/cjs && echo >./dist/cjs/package.json '{\"type\":\"commonjs\"}'",
     "format": "prettier --write --ignore-unknown '.' '!dist'",
     "lint": "eslint --max-warnings 0 .",
-    "license-header": "license-header"
+    "license-header": "license-header",
+    "attw": "attw --pack"
   },
   "peerDependencies": {
     "jest-environment-jsdom": "^29.5.0"
+  },
+  "devDependencies": {
+    "@arethetypeswrong/cli": "^0.11.0",
+    "esbuild": "^0.19.4"
   }
 }

@@ -18,6 +18,7 @@
 
     // We need node's module resolution, so we do not have to skip lib checks
     "moduleResolution": "Node",
-    "skipLibCheck": false
+    "skipLibCheck": false,
+    "declaration": true
   }
 }
