@@ -26,19 +26,19 @@
     "copyrightHolder": "Buf Technologies, Inc."
   },
   "devDependencies": {
-    "@bufbuild/license-header": "^0.0.3",
-    "@typescript-eslint/eslint-plugin": "^6.5.0",
-    "@typescript-eslint/parser": "^6.5.0",
-    "eslint": "^8.48.0",
-    "eslint-import-resolver-typescript": "^3.5.5",
+    "@bufbuild/license-header": "^0.0.4",
+    "@typescript-eslint/eslint-plugin": "^6.7.3",
+    "@typescript-eslint/parser": "^6.7.3",
+    "eslint": "^8.50.0",
+    "eslint-import-resolver-typescript": "^3.6.1",
     "eslint-plugin-import": "^2.28.1",
     "eslint-plugin-node": "^11.1.0",
     "prettier": "^3.0.3",
     "typescript": "^5.2.2"
   },
   "dependencies": {
-    "@types/jasmine": "^4.3.5",
+    "@types/jasmine": "^4.3.6",
     "jasmine": "^5.1.0",
-    "turbo": "^1.10.13"
+    "turbo": "^1.10.14"
   }
 }
