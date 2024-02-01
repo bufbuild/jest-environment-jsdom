@@ -19,25 +19,19 @@ updates:
       test:
         patterns:
           - "jest"
-          - "@arethetypeswrong/*"
+          - "ts-jest"
           - "benchmark"
           - "@types/benchmark"
-          - "long"
-          - "jasmine"
-          - "@types/jasmine"
-      format:
-        patterns:
-          - "@bufbuild/license-header"
-          - "prettier"
-          - "esbuild"
-      build:
+      build-lint-and-format:
         patterns:
           - "esbuild"
           - "tsx"
           - "ts-node"
           - "turbo"
-      eslint:
-        patterns:
+          - "typescript"
           - "@typescript-eslint/*"
           - "eslint-*"
           - "eslint"
+          - "@bufbuild/license-header"
+          - "prettier"
+          - "@arethetypeswrong/*"
