@@ -26,6 +26,6 @@
     "jest-environment-jsdom": "^29.5.0"
   },
   "devDependencies": {
-    "@arethetypeswrong/cli": "^0.13.5"
+    "@arethetypeswrong/cli": "^0.13.6"
   }
 }
