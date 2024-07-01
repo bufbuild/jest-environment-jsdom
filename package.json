@@ -1,10 +1,13 @@
 {
+  "name": "jest-environment-jsdom",
+  "version": "0",
   "private": true,
   "workspaces": [
     "./packages/jest-environment-jsdom",
     "./packages/jest-environment-jsdom-example"
   ],
   "scripts": {
+    "clean": "git clean -Xdf",
     "all": "turbo run build test format generate lint attw license-header",
     "build": "turbo run build",
     "test": "turbo run test",
@@ -19,6 +22,7 @@
     "node": ">=16",
     "npm": ">=8"
   },
+  "packageManager": "npm@9.8.1",
   "licenseHeader": {
     "licenseType": "apache",
     "yearRange": "2023-2024",
@@ -26,14 +30,14 @@
   },
   "devDependencies": {
     "@bufbuild/license-header": "^0.0.4",
-    "@typescript-eslint/eslint-plugin": "^7.11.0",
-    "@typescript-eslint/parser": "^7.11.0",
+    "@typescript-eslint/eslint-plugin": "^7.14.1",
+    "@typescript-eslint/parser": "^7.14.1",
     "eslint": "^8.57.0",
     "eslint-import-resolver-typescript": "^3.6.1",
     "eslint-plugin-import": "^2.29.1",
-    "eslint-plugin-n": "^17.7.0",
-    "prettier": "^3.2.5",
-    "turbo": "^1.13.3",
-    "typescript": "^5.4.5"
+    "eslint-plugin-n": "^17.9.0",
+    "prettier": "^3.3.2",
+    "turbo": "^2.0.6",
+    "typescript": "^5.5.2"
   }
 }
