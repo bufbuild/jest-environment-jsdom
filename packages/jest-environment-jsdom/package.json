@@ -17,8 +17,8 @@
     "clean": "rm -rf ./dist/*",
     "build": "npm run build:cjs",
     "build:cjs": "tsc --project tsconfig.json --module commonjs --outDir ./dist/cjs --declaration --declarationDir ./dist/cjs && echo >./dist/cjs/package.json '{\"type\":\"commonjs\"}'",
-    "format": "prettier --write --ignore-unknown '.' '!dist'",
-    "lint": "eslint --max-warnings 0 .",
+    "format": "biome format --write",
+    "lint": "biome lint --error-on-warnings",
     "license-header": "license-header",
     "attw": "attw --pack"
   },
