@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import { TextDecoder, TextEncoder } from "util";
+import { TextDecoder, TextEncoder } from "node:util";
 import JsdomEnvironment from "jest-environment-jsdom";
 
 module.exports = class JsdomModernEnvironment extends JsdomEnvironment {
