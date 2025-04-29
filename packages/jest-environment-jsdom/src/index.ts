@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import { TextDecoder, TextEncoder } from "util";
+import { TextDecoder, TextEncoder } from "node:util";
 import JsdomEnvironment from "jest-environment-jsdom";
 
 module.exports = class JsdomModernEnvironment extends JsdomEnvironment {
@@ -20,8 +20,8 @@ module.exports = class JsdomModernEnvironment extends JsdomEnvironment {
     await super.setup();
 
     if (
-      this.global.TextEncoder !== undefined || // eslint-disable-line @typescript-eslint/no-unnecessary-condition
-      this.global.TextDecoder !== undefined // eslint-disable-line @typescript-eslint/no-unnecessary-condition
+      this.global.TextEncoder !== undefined ||
+      this.global.TextDecoder !== undefined
     ) {
       // jest-environment-jsdom@29.6.1 does not provide either.
       // In case they are defined, bail out and do not change anything because

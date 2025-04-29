@@ -9,13 +9,9 @@
   "scripts": {
     "clean": "git clean -Xdf",
     "all": "turbo run build test format generate lint attw license-header",
-    "build": "turbo run build",
-    "test": "turbo run test",
-    "lint": "turbo run lint",
-    "attw": "turbo run attw",
-    "format": "turbo run format",
-    "generate": "turbo run generate",
-    "license-header": "turbo run license-header"
+    "lint": "biome lint --error-on-warnings --config-path biome.json",
+    "format": "biome format --write --config-path biome.json",
+    "license-header": "license-header --ignore 'packages/**'"
   },
   "engineStrict": true,
   "engines": {
@@ -29,14 +25,8 @@
     "copyrightHolder": "Buf Technologies, Inc."
   },
   "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
     "@bufbuild/license-header": "^0.0.4",
-    "@typescript-eslint/eslint-plugin": "^7.14.1",
-    "@typescript-eslint/parser": "^7.14.1",
-    "eslint": "^8.57.0",
-    "eslint-import-resolver-typescript": "^3.7.0",
-    "eslint-plugin-import": "^2.31.0",
-    "eslint-plugin-n": "^17.15.1",
-    "prettier": "^3.5.2",
     "turbo": "^2.4.4",
     "typescript": "^5.8.2"
   }

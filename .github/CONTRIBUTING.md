@@ -22,7 +22,12 @@ git remote add upstream https://github.com/bufbuild/jest-environment-jsdom.git
 git fetch upstream
 ```
 
-Make sure that the tests and the linters pass (you'll need `node`, `bash`, and the latest stable Go release installed):
+Install dependencies (you'll need Node.js in the version specified in `.nvmrc`,
+and `npm` in the version specified in `package.json`):
+
+```bash
+npm ci
+```
 
 The easiest way to run all commands is to use the `all` npm script:
 
