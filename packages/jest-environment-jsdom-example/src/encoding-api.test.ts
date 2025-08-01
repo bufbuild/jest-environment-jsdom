@@ -16,30 +16,30 @@ import { describe, expect, test } from "@jest/globals";
 import { decodeUtf8, encodeUtf8 } from "./encoding-api";
 
 describe("text encoding API", () => {
-  test("should encode", () => {
-    const bytes = encodeUtf8("soirée 🎉");
-    expect(bytes.buffer).toBeInstanceOf(ArrayBuffer);
-    expect(bytes).toBeInstanceOf(Uint8Array);
-    expect(bytes.length).toBe(12);
-    expect(bytes).toStrictEqual(
-      new Uint8Array([
-        0x73, 0x6f, 0x69, 0x72, 0xc3, 0xa9, 0x65, 0x20, 0xf0, 0x9f, 0x8e, 0x89,
-      ]),
-    );
-  });
-  test("should decode", () => {
-    const text = decodeUtf8(
-      new Uint8Array([
-        0x73, 0x6f, 0x69, 0x72, 0xc3, 0xa9, 0x65, 0x20, 0xf0, 0x9f, 0x8e, 0x89,
-      ]),
-    );
-    expect(text).toBe("soirée 🎉");
-  });
+	test("should encode", () => {
+		const bytes = encodeUtf8("soirée 🎉");
+		expect(bytes.buffer).toBeInstanceOf(ArrayBuffer);
+		expect(bytes).toBeInstanceOf(Uint8Array);
+		expect(bytes.length).toBe(12);
+		expect(bytes).toStrictEqual(
+			new Uint8Array([
+				0x73, 0x6f, 0x69, 0x72, 0xc3, 0xa9, 0x65, 0x20, 0xf0, 0x9f, 0x8e, 0x89,
+			]),
+		);
+	});
+	test("should decode", () => {
+		const text = decodeUtf8(
+			new Uint8Array([
+				0x73, 0x6f, 0x69, 0x72, 0xc3, 0xa9, 0x65, 0x20, 0xf0, 0x9f, 0x8e, 0x89,
+			]),
+		);
+		expect(text).toBe("soirée 🎉");
+	});
 });
 
 describe("using jsdom in this test file", () => {
-  test("still works", () => {
-    const element = document.createElement("div");
-    expect(element).not.toBeNull();
-  });
+	test("still works", () => {
+		const element = document.createElement("div");
+		expect(element).not.toBeNull();
+	});
 });

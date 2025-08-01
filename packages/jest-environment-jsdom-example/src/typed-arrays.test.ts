@@ -16,48 +16,48 @@ import { describe, expect, test } from "@jest/globals";
 import { createTypedArrays, createView } from "./typed-arrays";
 
 describe("typed arrays", () => {
-  test("should be available", () => {
-    const arrays = createTypedArrays();
-    expect(arrays.length).toBe(11);
-  });
-  test("should be instanceof", () => {
-    const [
-      int8,
-      uint8,
-      uint8clamped,
-      int16,
-      uint16,
-      int32,
-      uint32,
-      float32,
-      float64,
-      bigInt64,
-      bigUint64,
-    ] = createTypedArrays();
-    expect(int8).toBeInstanceOf(Int8Array);
-    expect(uint8).toBeInstanceOf(Uint8Array);
-    expect(uint8clamped).toBeInstanceOf(Uint8ClampedArray);
-    expect(int16).toBeInstanceOf(Int16Array);
-    expect(uint16).toBeInstanceOf(Uint16Array);
-    expect(int32).toBeInstanceOf(Int32Array);
-    expect(uint32).toBeInstanceOf(Uint32Array);
-    expect(float32).toBeInstanceOf(Float32Array);
-    expect(float64).toBeInstanceOf(Float64Array);
-    expect(bigInt64).toBeInstanceOf(BigInt64Array);
-    expect(bigUint64).toBeInstanceOf(BigUint64Array);
-  });
+	test("should be available", () => {
+		const arrays = createTypedArrays();
+		expect(arrays.length).toBe(11);
+	});
+	test("should be instanceof", () => {
+		const [
+			int8,
+			uint8,
+			uint8clamped,
+			int16,
+			uint16,
+			int32,
+			uint32,
+			float32,
+			float64,
+			bigInt64,
+			bigUint64,
+		] = createTypedArrays();
+		expect(int8).toBeInstanceOf(Int8Array);
+		expect(uint8).toBeInstanceOf(Uint8Array);
+		expect(uint8clamped).toBeInstanceOf(Uint8ClampedArray);
+		expect(int16).toBeInstanceOf(Int16Array);
+		expect(uint16).toBeInstanceOf(Uint16Array);
+		expect(int32).toBeInstanceOf(Int32Array);
+		expect(uint32).toBeInstanceOf(Uint32Array);
+		expect(float32).toBeInstanceOf(Float32Array);
+		expect(float64).toBeInstanceOf(Float64Array);
+		expect(bigInt64).toBeInstanceOf(BigInt64Array);
+		expect(bigUint64).toBeInstanceOf(BigUint64Array);
+	});
 });
 
 describe("data view", () => {
-  test("should be available", () => {
-    const view = createView();
-    expect(view).toBeInstanceOf(DataView);
-  });
+	test("should be available", () => {
+		const view = createView();
+		expect(view).toBeInstanceOf(DataView);
+	});
 });
 
 describe("using jsdom in this test file", () => {
-  test("still works", () => {
-    const element = document.createElement("div");
-    expect(element).not.toBeNull();
-  });
+	test("still works", () => {
+		const element = document.createElement("div");
+		expect(element).not.toBeNull();
+	});
 });

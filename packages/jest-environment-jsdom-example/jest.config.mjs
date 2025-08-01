@@ -14,9 +14,9 @@
 
 /** @type {import('ts-jest').JestConfigWithTsJest} */
 const config = {
-  preset: "ts-jest",
-  // testEnvironment: 'jsdom',
-  testEnvironment: "@bufbuild/jest-environment-jsdom",
+	preset: "ts-jest",
+	// testEnvironment: 'jsdom',
+	testEnvironment: "@bufbuild/jest-environment-jsdom",
 };
 
 export default config;

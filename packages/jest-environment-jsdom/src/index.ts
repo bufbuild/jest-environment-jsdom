@@ -16,24 +16,24 @@ import { TextDecoder, TextEncoder } from "node:util";
 import JsdomEnvironment from "jest-environment-jsdom";
 
 module.exports = class JsdomModernEnvironment extends JsdomEnvironment {
-  override async setup() {
-    await super.setup();
+	override async setup() {
+		await super.setup();
 
-    if (
-      this.global.TextEncoder !== undefined ||
-      this.global.TextDecoder !== undefined
-    ) {
-      // jest-environment-jsdom@29.6.1 does not provide either.
-      // In case they are defined, bail out and do not change anything because
-      // the underlying issue may have been fixed.
-      return;
-    }
+		if (
+			this.global.TextEncoder !== undefined ||
+			this.global.TextDecoder !== undefined
+		) {
+			// jest-environment-jsdom@29.6.1 does not provide either.
+			// In case they are defined, bail out and do not change anything because
+			// the underlying issue may have been fixed.
+			return;
+		}
 
-    this.global.TextDecoder = TextDecoder as typeof this.global.TextDecoder;
-    this.global.TextEncoder = TextEncoder;
+		this.global.TextDecoder = TextDecoder as typeof this.global.TextDecoder;
+		this.global.TextEncoder = TextEncoder;
 
-    // restore for instanceof, see https://github.com/jestjs/jest/issues/9983
-    this.global.Uint8Array = Uint8Array;
-    this.global.ArrayBuffer = ArrayBuffer;
-  }
+		// restore for instanceof, see https://github.com/jestjs/jest/issues/9983
+		this.global.Uint8Array = Uint8Array;
+		this.global.ArrayBuffer = ArrayBuffer;
+	}
 };

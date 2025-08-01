@@ -13,22 +13,22 @@
 // limitations under the License.
 
 export function createTypedArrays() {
-  return [
-    new Int8Array(64),
-    new Uint8Array(64),
-    new Uint8ClampedArray(64),
-    new Int16Array(64),
-    new Uint16Array(64),
-    new Int32Array(64),
-    new Uint32Array(64),
-    new Float32Array(64),
-    new Float64Array(64),
-    new BigInt64Array(64),
-    new BigUint64Array(64),
-  ];
+	return [
+		new Int8Array(64),
+		new Uint8Array(64),
+		new Uint8ClampedArray(64),
+		new Int16Array(64),
+		new Uint16Array(64),
+		new Int32Array(64),
+		new Uint32Array(64),
+		new Float32Array(64),
+		new Float64Array(64),
+		new BigInt64Array(64),
+		new BigUint64Array(64),
+	];
 }
 
 export function createView() {
-  const buffer = new ArrayBuffer(64);
-  return new DataView(buffer);
+	const buffer = new ArrayBuffer(64);
+	return new DataView(buffer);
 }

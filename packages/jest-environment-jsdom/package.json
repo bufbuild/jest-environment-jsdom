@@ -1,29 +1,31 @@
 {
-  "name": "@bufbuild/jest-environment-jsdom",
-  "version": "0.1.1",
-  "license": "Apache-2.0",
-  "description": "A modern jsdom test environment for Jest",
-  "main": "./dist/cjs/index.js",
-  "exports": "./dist/cjs/index.js",
-  "files": ["dist/**"],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/bufbuild/jest-environment-jsdom.git",
-    "directory": "packages/jest-environment-jsdom"
-  },
-  "scripts": {
-    "clean": "rm -rf ./dist/*",
-    "build": "npm run build:cjs",
-    "build:cjs": "tsc --project tsconfig.json --module commonjs --outDir ./dist/cjs --declaration --declarationDir ./dist/cjs && echo >./dist/cjs/package.json '{\"type\":\"commonjs\"}'",
-    "format": "biome format --write",
-    "lint": "biome lint --error-on-warnings",
-    "license-header": "license-header",
-    "attw": "attw --pack"
-  },
-  "peerDependencies": {
-    "jest-environment-jsdom": "^29.5.0"
-  },
-  "devDependencies": {
-    "@arethetypeswrong/cli": "^0.18.2"
-  }
+	"name": "@bufbuild/jest-environment-jsdom",
+	"version": "0.1.1",
+	"license": "Apache-2.0",
+	"description": "A modern jsdom test environment for Jest",
+	"main": "./dist/cjs/index.js",
+	"exports": "./dist/cjs/index.js",
+	"files": [
+		"dist/**"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/bufbuild/jest-environment-jsdom.git",
+		"directory": "packages/jest-environment-jsdom"
+	},
+	"scripts": {
+		"clean": "rm -rf ./dist/*",
+		"build": "npm run build:cjs",
+		"build:cjs": "tsc --project tsconfig.json --module commonjs --outDir ./dist/cjs --declaration --declarationDir ./dist/cjs && echo >./dist/cjs/package.json '{\"type\":\"commonjs\"}'",
+		"format": "biome format --write",
+		"lint": "biome lint --error-on-warnings",
+		"license-header": "license-header",
+		"attw": "attw --pack"
+	},
+	"peerDependencies": {
+		"jest-environment-jsdom": "^29.5.0"
+	},
+	"devDependencies": {
+		"@arethetypeswrong/cli": "^0.18.2"
+	}
 }
