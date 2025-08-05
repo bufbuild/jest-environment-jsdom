@@ -30,7 +30,7 @@ module.exports = class JsdomModernEnvironment extends JsdomEnvironment {
     }
 
     this.global.TextDecoder = TextDecoder as typeof this.global.TextDecoder;
-    this.global.TextEncoder = TextEncoder;
+    this.global.TextEncoder = TextEncoder as typeof this.global.TextEncoder;
 
     // restore for instanceof, see https://github.com/jestjs/jest/issues/9983
     this.global.Uint8Array = Uint8Array;
